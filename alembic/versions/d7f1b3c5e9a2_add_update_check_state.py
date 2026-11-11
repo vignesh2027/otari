@@ -6,7 +6,7 @@ replica's worker polls; the conditional update that moves its
 ``next_check_at`` forward is what lets exactly one replica send a check.
 
 Revision ID: d7f1b3c5e9a2
-Revises: a7f2c91d4e60
+Revises: c4b8e2a19d73, d8e1f3a5b7c9
 Create Date: 2026-10-20
 """
 
@@ -16,7 +16,7 @@ import sqlalchemy as sa
 from alembic import op
 
 revision: str = "d7f1b3c5e9a2"
-down_revision: str | Sequence[str] | None = "a7f2c91d4e60"
+down_revision: str | Sequence[str] | None = ("c4b8e2a19d73", "d8e1f3a5b7c9")
 branch_labels: str | Sequence[str] | None = None
 depends_on: str | Sequence[str] | None = None
 
